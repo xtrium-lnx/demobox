@@ -10,6 +10,22 @@ If, just like me - xtrium - you prefer to watch the real thing instead of a yout
 * Put the Demobox.exe and the dlls from the Release (or Debug) folder into a common folder, and put the assets/ folder next to them.
 * Run.
 
+### How to add a new demo
+* Unpack it in the assets/demos/<my_demo> folder
+* create assets/demos/<my_demo>/<my_demo>.demo file
+* Use the following format :
+
+* Demo title
+* Author or group
+* Type value: 0 for 1k or less, 1 for 4k, 2 for 64k, 3 for demos
+* Platform value: always 0 (windows) for the moment
+* Release party
+* Release year
+* Rank at the demoparty it was released
+* executable to start
+* Launcher window title(0 if no launcher)
+* Launcher start button caption (0 if no launcher)
+
 ### State
 Demobox is in a rather early stage. The plan is to get as many people to try it, report bugs, and for those who are brave enough, take part in its development :)
 
