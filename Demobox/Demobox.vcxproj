@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{218071D7-65A2-4CC2-ACD0-CFE7AB6DAF64}</ProjectGuid>
+    <RootNamespace>LightStudio_PROTO</RootNamespace>
+    <ProjectName>Demobox</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\libs\libvlc\include;..\libs\freetype\include;..\libs\id3lib\include;..\libs\pvrlib\include;..\libs\glfw3\include;..\libs\glew\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;ID3LIB_LINKOPTION=3;_MBCS;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\libs\libvlc\libs;..\libs\freetype\libs;..\libs\id3lib\libs;..\libs\pvrlib\libs;..\libs\glew\libs;..\libs\glfw3\libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>id3lib.lib;libvlc.lib;freetype252.lib;PVRTexLib.lib;opengl32.lib;glu32.lib;glew32s.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\libs\libvlc\include;..\libs\freetype\include;..\libs\id3lib\include;..\libs\pvrlib\include;..\libs\glfw3\include;..\libs\glew\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;ID3LIB_LINKOPTION=3;_MBCS;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>..\libs\libvlc\libs;..\libs\freetype\libs;..\libs\id3lib\libs;..\libs\pvrlib\libs;..\libs\glew\libs;..\libs\glfw3\libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>id3lib.lib;libvlc.lib;freetype252.lib;PVRTexLib.lib;opengl32.lib;glu32.lib;glew32s.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Application.cpp" />
+    <ClCompile Include="Database.cpp" />
+    <ClCompile Include="MediaItemDemo.cpp" />
+    <ClCompile Include="GlContext.cpp" />
+    <ClCompile Include="GlShader.cpp" />
+    <ClCompile Include="GlTextRenderer.cpp" />
+    <ClCompile Include="GlTexture.cpp" />
+    <ClCompile Include="ScreenHome.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MediaInterface.cpp" />
+    <ClCompile Include="MediaItem.cpp" />
+    <ClCompile Include="ScreenMediaPlayer.cpp" />
+    <ClCompile Include="MediaItemMovie.cpp" />
+    <ClCompile Include="ScreenFlow.cpp" />
+    <ClCompile Include="ScreenList.cpp" />
+    <ClCompile Include="ScreenSelector.cpp" />
+    <ClCompile Include="Settings.cpp" />
+    <ClCompile Include="MediaItemSong.cpp" />
+    <ClCompile Include="GlVertexBuffer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Application.h" />
+    <ClInclude Include="Database.h" />
+    <ClInclude Include="MediaItemDemo.h" />
+    <ClInclude Include="GlContext.h" />
+    <ClInclude Include="GlShader.h" />
+    <ClInclude Include="GlTextRenderer.h" />
+    <ClInclude Include="GlTexture.h" />
+    <ClInclude Include="ScreenHome.h" />
+    <ClInclude Include="ScreenInterface.h" />
+    <ClInclude Include="MediaInterface.h" />
+    <ClInclude Include="MediaItem.h" />
+    <ClInclude Include="ScreenMediaPlayer.h" />
+    <ClInclude Include="MediaItemMovie.h" />
+    <ClInclude Include="ScreenFlow.h" />
+    <ClInclude Include="ScreenList.h" />
+    <ClInclude Include="ScreenSelector.h" />
+    <ClInclude Include="Settings.h" />
+    <ClInclude Include="MediaItemSong.h" />
+    <ClInclude Include="xtd_Signal.h" />
+    <ClInclude Include="GlVertexBuffer.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
