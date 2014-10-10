@@ -3,7 +3,7 @@
 Demobox is an application to run on your living room computer. It allows to run demos straight from your couch, bypassing launcher windows if there are any. And of course, you can watch videos or listen to music :)
 
 ### Uses
-If, just like me - xtrium - you prefer to watch the real thing instead of a youtube capture, but you also like to watch demos sitting in your couch (or maybe you want to display a demo playlist at a party), you might already use a HTPC application like XBMC, but these programs don't run demos. In that case, Demobox is just for you !
+If, just like me you prefer to watch the real thing instead of a youtube capture, but you also like to watch demos sitting in your couch (or maybe you want to display a demo playlist at a party), you might already use a HTPC application like XBMC, but these programs don't run demos. In that case, Demobox is just for you !
 
 ### How to use
 * Build using VS2013
