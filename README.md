@@ -12,7 +12,7 @@ If, just like me - xtrium - you prefer to watch the real thing instead of a yout
 
 ### How to add a new demo
 * Unpack it in the assets/demos/<my_demo> folder
-* create assets/demos/<my_demo>/<my_demo>.demo file
+* create assets/demos/[my_demo]/[my_demo].demo file
 * Use the following format :
 
       * Demo title
